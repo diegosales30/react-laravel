@@ -18,8 +18,6 @@ Certifique-se de ter os seguintes requisitos instalados em seu sistema:
 
 
 ### Configuração do Backend (Laravel)
-
-```
   1- Abra um terminal navegue até o diretório `backend`
   2. Execute o comando `rm -rf vendor` e depois `composer install` para instalar as dependências do Laravel.
   3. Execute o comando `touch database/database.sqlite` para criar o arquivo db.
@@ -27,10 +25,8 @@ Certifique-se de ter os seguintes requisitos instalados em seu sistema:
   5. Execute o comando `php artisan db:seed` para popular o db.
   após executar todos os passos, basta executar o `php artisan serve` e criar uma conta no front.
   6. Execute o comando `php artisan serve` para iniciar o servidor de desenvolvimento do Laravel.
-
   O backend agora está configurado e sendo executado no endereço `http://localhost:8000`.
-  
-```
+
 
 ### Configuração do Frontend (React)
 ```
