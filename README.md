@@ -1,8 +1,8 @@
-#Aplicação Laravel + React - README
+# Aplicação Laravel + React - README
 
 Este repositório contém uma aplicação web desenvolvida usando Laravel (backend) e React (frontend). A aplicação é executada localmente e utiliza o banco de dados SQLite. O objetivo da aplicação é permitir que os usuários criem contas, façam login, sejam maiores de 18 anos para se cadastrar, editem suas contas e as excluam.
 
-##Pré-requisitos
+## Pré-requisitos
 Certifique-se de ter os seguintes requisitos instalados em seu sistema:
 - PHP >= 7.4
 - Composer
@@ -10,13 +10,13 @@ Certifique-se de ter os seguintes requisitos instalados em seu sistema:
 - npm >= 6
 - SQLite (o banco de dados é criado automaticamente durante a configuração inicial)
 
-##Instalação
+## Instalação
 Siga as etapas abaixo para configurar e executar a aplicação localmente:
 
 1. Clone este repositório para o seu ambiente local.
 2. Abra um terminal e navegue até o diretório raiz da aplicação.
 
-###Configuração do Backend (Laravel)
+### Configuração do Backend (Laravel)
 0. entre no diretório `cd backend` e Execute o comando `php artisan serve` para iniciar o servidor
 O backend agora está configurado e sendo executado no endereço `http://localhost:8000`.
 
@@ -26,7 +26,7 @@ O backend agora está configurado e sendo executado no endereço `http://localho
 4. Execute o comando `php artisan migrate` para criar as tabelas necessárias no banco de dados.
 5. Execute o comando `php artisan serve` para iniciar o servidor de desenvolvimento do Laravel. -->
 
-###Configuração do Frontend (React)
+### Configuração do Frontend (React)
 1. Abra outro terminal e navegue até o diretório `frontend` dentro do diretório raiz da aplicação e Execute o comando `npm run dev`
 O frontend agora está configurado e sendo executado no endereço `http://localhost:3000`.
 Abra o endereço `http://localhost:3000` no navegador e faça o teste.
@@ -34,7 +34,7 @@ Abra o endereço `http://localhost:3000` no navegador e faça o teste.
 3. Execute o comando `npm run dev` para iniciar o servidor de desenvolvimento do React. -->
 
 
-##Uso
+## Uso
 
 A aplicação consiste nas seguintes funcionalidades:
 
