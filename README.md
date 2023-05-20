@@ -29,20 +29,18 @@ Certifique-se de ter os seguintes requisitos instalados em seu sistema:
 
 
 ### Configuração do Frontend (React)
-```
   1. Abra outro terminal e navegue até o diretório `frontend` dentro do diretório raiz da aplicação e Execute o comando `npm run dev`
   O frontend agora está configurado e sendo executado no endereço `http://localhost:3000`.
   Abra o endereço `http://localhost:3000` no navegador e faça o teste.
 
-  ***caso não funcione, será necessário instalar as dependencias, mas já estão no github.
+  - **caso não funcione, será necessário instalar as dependencias, mas já estão no github.
   1. Execute o comando `npm install` 
   2. Execute o comando `npm run dev` para iniciar o servidor de desenvolvimento do React.
   
-```
+
 
 ## Uso
 
-```
   A aplicação consiste nas seguintes funcionalidades:
 
   - **Criar conta**: Acesse a página de registro fornecendo um nome de usuário, endereço de email e senha válidos. A conta será criada no banco de dados.
@@ -51,5 +49,3 @@ Certifique-se de ter os seguintes requisitos instalados em seu sistema:
   - **Verificar idade**: A aplicação exige que os usuários sejam maiores de 18 anos para se cadastrar.
   - **Editar conta**: Após fazer login, os usuários podem editar as informações da conta, incluindo nome de usuário, endereço de email e senha.
   - **Excluir conta**: Os usuários têm a opção de excluir permanentemente suas contas.
-
-```
