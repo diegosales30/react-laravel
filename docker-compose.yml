@@ -1,0 +1,24 @@
+version: '3'
+services:
+  web:
+    build:
+      context: ./back-end
+      dockerfile: Dockerfile
+    volumes:
+      - ./back-end:/var/www/html
+    ports:
+      - 8000:8000
+    networks:
+      - laravel-react
+  frontend:
+    build:
+      context: ./front-end
+      dockerfile: Dockerfile
+    volumes:
+      - ./fron-tend:/src
+    ports:
+      - 3000:3000
+    networks:
+      - laravel-react
+networks:
+  laravel-react:
