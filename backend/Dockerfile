@@ -1,25 +1,25 @@
+# Define a imagem base
 FROM php:7.4-apache
 
-RUN a2enmod rewrite
+# Instala o Composer
+RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
+    && php composer-setup.php --install-dir=/usr/local/bin --filename=composer \
+    && php -r "unlink('composer-setup.php');"
 
-RUN apt-get update && apt-get install -y \
-    libpng-dev \
-    libonig-dev \
-    libxml2-dev \
-    zip \
-    unzip \
-    git
-
-RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
-
+# Define o diretório de trabalho
 WORKDIR /var/www/html
 
-COPY . /var/www/html
+# Copia os arquivos da aplicação para o diretório de trabalho
+COPY . .
 
-RUN chmod -R 777 storage bootstrap/cache
+# Executa o composer update para instalar as dependências
+RUN composer update --no-plugins --no-scripts
 
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+# Executa as migrations e seeds
+RUN php artisan migrate --seed
 
-RUN composer install
+# Expõe a porta para acesso externo
+EXPOSE 80
 
-CMD php artisan serve --host=0.0.0.0 --port=8000
+# Define o comando de inicialização
+CMD ["apache2-foreground"]
