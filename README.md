@@ -18,7 +18,7 @@ Certifique-se de ter os seguintes requisitos instalados em seu sistema:
 
 
 ### Configuração do Backend (Laravel)
-  1- Abra um terminal navegue até o diretório `backend`
+  1. Abra um terminal navegue até o diretório `backend`
   2. Execute o comando `rm -rf vendor` e depois `composer install` para instalar as dependências do Laravel.
   3. Execute o comando `touch database/database.sqlite` para criar o arquivo db.
   4. Execute o comando `php artisan migrate` para criar as tabelas necessárias no banco de dados.
