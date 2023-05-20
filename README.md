@@ -17,21 +17,25 @@ Siga as etapas abaixo para configurar e executar a aplicação localmente:
 2. Abra um terminal e navegue até o diretório raiz da aplicação.
 
 ### Configuração do Backend (Laravel)
-0. entre no diretório `cd backend` e Execute o comando `php artisan serve` para iniciar o servidor
-O backend agora está configurado e sendo executado no endereço `http://localhost:8000`.
 
-<!-- 1. Execute o comando `composer install` para instalar as dependências do Laravel.
-2. Faça uma cópia do arquivo `.env.example` e renomeie-a para `.env`. Certifique-se de configurar as informações corretas do banco de dados nesse arquivo.
-3. Execute o comando `php artisan key:generate` para gerar uma chave de criptografia única para a aplicação.
+1- Abra um terminal navegue até o diretório `backend`
+2. Execute o comando `rm -rf vendor` e depois `composer install` para instalar as dependências do Laravel.
+3. Execute o comando `touch database/database.sqlite` para criar o arquivo db.
 4. Execute o comando `php artisan migrate` para criar as tabelas necessárias no banco de dados.
-5. Execute o comando `php artisan serve` para iniciar o servidor de desenvolvimento do Laravel. -->
+5. Execute o comando `php artisan db:seed` para popular o db.
+após executar todos os passos, basta executar o `php artisan serve` e criar uma conta no front.
+5. Execute o comando `php artisan serve` para iniciar o servidor de desenvolvimento do Laravel.
+
+O backend agora está configurado e sendo executado no endereço `http://localhost:8000`.
 
 ### Configuração do Frontend (React)
 1. Abra outro terminal e navegue até o diretório `frontend` dentro do diretório raiz da aplicação e Execute o comando `npm run dev`
 O frontend agora está configurado e sendo executado no endereço `http://localhost:3000`.
 Abra o endereço `http://localhost:3000` no navegador e faça o teste.
-<!-- 2. Execute o comando `npm install` para instalar as dependências do React.
-3. Execute o comando `npm run dev` para iniciar o servidor de desenvolvimento do React. -->
+
+***caso não funcione, será necessário instalar as dependencias, mas já estão no github.
+1. Execute o comando `npm install` 
+2. Execute o comando `npm run dev` para iniciar o servidor de desenvolvimento do React.
 
 
 ## Uso
