@@ -11,12 +11,11 @@ Certifique-se de ter os seguintes requisitos instalados em seu sistema:
 - SQLite (o banco de dados é criado automaticamente durante a configuração inicial)
 
 ## Instalação
-```
   Siga as etapas abaixo para configurar e executar a aplicação localmente:
 
   1. Clone este repositório para o seu ambiente local.
   2. Abra um terminal e navegue até o diretório raiz da aplicação.
-```
+
 
 ### Configuração do Backend (Laravel)
 
