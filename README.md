@@ -40,7 +40,7 @@ Certifique-se de ter os seguintes requisitos instalados em seu sistema:
 
 
 ## Uso
-
+....
   A aplicação consiste nas seguintes funcionalidades:
 
   - **Criar conta**: Acesse a página de registro fornecendo um nome de usuário, endereço de email e senha válidos. A conta será criada no banco de dados.
